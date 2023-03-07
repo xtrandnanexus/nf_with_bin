@@ -36,6 +36,6 @@ process duplicateText {
 	path "output2.txt", emit: duplicate
     script:
 	"""
-    (cat ${modify} ; bash script.sh ; cat ${modify}) > output2.txt
+    (cat ${modify}; bash script.sh ; cat ${modify}) > output2.txt
 	"""
 }
