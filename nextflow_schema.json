@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "testing nextflow by a simple workflow",
+    "description": "",
+    "type": "object",
+    "definitions": {
+        "inputs": {
+            "title": "Inputs",
+            "type": "object",
+            "description": "",
+            "default": "",
+            "properties": {
+               "inputFile": {
+                   "type": "string",
+                   "format": "file-path"
+                },
+                "outDir": {
+                    "type": "string",
+                    "format": "directory-path"
+                }
+            },
+            "required": [
+                "inputFile",
+                "outDir"
+            ]
+        }
+    }
+}
