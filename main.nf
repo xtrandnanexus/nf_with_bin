@@ -36,6 +36,6 @@ process duplicateText {
 	path "output2.txt", emit: duplicate
     script:
 	"""
-    	(cat ${modify}; script.sh ; cat ${modify}) > output2.txt
+    	(cat ${modify}; bash nextflow-bin/script.sh ; cat ${modify}) > output2.txt
 	"""
 }
